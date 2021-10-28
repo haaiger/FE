@@ -1,38 +1,723 @@
 .App {
-  text-align: center;
+    background: linear-gradient(287.56deg, rgba(202, 204, 213, 0.5) 0%, rgba(222, 228, 239, 0.5) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Center {
+    width: 1280px;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.HeaderApp {
+    display: flex;
+    width: auto;
+    height: 80px;
+    flex-direction: row;
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.UserAppBlock {
+    margin-left: 40px;
+    margin-top: 23px;
+    display: flex;
+    width: 260px;
+    height: 33px;
+    margin-bottom: 26px;
+    margin-top: 26px;
 }
 
-.App-link {
-  color: #61dafb;
+.UserApp {
+    width: 260px;
+    height: 33px;
+    margin-left: 16px;
+
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    text-align: left;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header {
+
+    display: flex;
+    width: 720px;
+    height: 24px;
+    margin-left: 156px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+
+
+}
+
+.ArrowLeft {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.HeaderText {
+    width: 600px;
+    height: 24px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+
+}
+
+.Printer {
+    width: 24px;
+    height: 24px;
+
+}
+
+.Git {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+
+}
+
+.UserPlus {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    margin-right: 24px;
+}
+
+.Avatar {
+    display: flex;
+    width: 172px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: right;
+
+}
+
+.Photo {
+    width: 42px;
+    height: 40px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+
+}
+
+.User {
+    width: 150px;
+    height: 28px;
+
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    text-align: left;
+    word-wrap: normal;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+
+}
+
+.Points {
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.Point {
+
+
+}
+
+.Body {
+    display: flex;
+
+}
+
+.Left {
+    width: 300px;
+    height: 640px;
+    padding: 16px 24px 40px 24px;
+
+
+}
+
+.UsersBlock {
+    display: flex;
+    width: 252px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-right: 24px;
+    background: #F6F8F8;
+    box-shadow: 0px 8px 32px rgba(69, 69, 69, 0.06);
+    border-radius: 16px;
+}
+
+.UsersProfile {
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.Users {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FA6400;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-right: 87px;
+    margin-bottom: 16px;
+
+
+}
+
+.TimeBlock {
+    display: flex;
+    width: 252px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-right: 24px;
+
+}
+
+.Watch {
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+
+}
+
+.Time {
+    width: 252px;
+    height: 56px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #797F8F;
+    padding-top: 16px;
+    padding-right: 91px;
+    padding-bottom: 16px;
+
+
+}
+
+.SettingsBlock {
+    display: flex;
+    width: 252px;
+    height: 56px;
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-right: 24px;
+}
+
+.Sliders {
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+
+}
+
+.Settings {
+    width: 252px;
+    height: 56px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #797F8F;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+
+}
+
+.Right {
+    width: 980px;
+    height: 720px;
+    margin-left: 24px;
+}
+
+.Table {
+    width: 940px;
+    height: 616px;
+    margin-top: 16px;
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(69, 69, 69, 0.06);
+    border-radius: 16px;
+
+}
+
+.Sort {
+    width: 940px;
+    height: 80px;
+    display: flex;
+
+
+}
+
+.FlnameBlock {
+    display: flex;
+    width: 317px;
+    height: 40px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    margin-left: 24px;
+    margin-right: 16px;
+    background: #F6F8F8;
+    border-radius: 12px;
+
+}
+
+.Search {
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-right: 12px;
+
+}
+
+.Search-flname {
+    width: 85px;
+    height: 21px;
+    margin-top: 9px;
+    margin-left: 12px;
+    margin-bottom: 9px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #797F8F;
+
+
+}
+
+.RoleBlock {
+    display: flex;
+    width: 230px;
+    height: 40px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    background: #F6F8F8;
+    border-radius: 12px;
+}
+
+.Choose-role {
+    width: 172px;
+    height: 21px;
+    margin-top: 9px;
+    margin-left: 12px;
+    margin-bottom: 9px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #797F8F;
+
+
+}
+
+.CaretDown {
+    width: 10px;
+    height: 10px;
+    margin-right: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 16px;
+
+
+}
+
+.AccessBlock {
+    display: flex;
+    width: 230px;
+    height: 40px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    background: #F6F8F8;
+    border-radius: 12px;
+
+}
+
+.Choose-access {
+    width: 172px;
+    height: 21px;
+    margin-left: 16px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #797F8F;
+
+
+}
+
+.Reset {
+    width: 67px;
+    height: 21px;
+    margin-top: 33px;
+    margin-bottom: 25px;
+    margin-left: 16px;
+    margin-right: 24px;
+    color: #FA6400;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.Cap {
+    width: 940px;
+    height: 48px;
+    display: flex;
+}
+
+.LockBlock {
+
+    width: 40px;
+    height: 16px;
+    margin: 16px;
+}
+
+.Lock {
+    width: 16px;
+    height: 16px;
+
+}
+
+.Flname {
+    width: 183px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #B8C7CC;
+    margin: 16px;
+
+
+}
+
+.Login {
+
+    width: 128px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #B8C7CC;
+    margin: 16px;
+
+}
+
+.Role {
+
+    width: 132px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #B8C7CC;
+    margin: 16px;
+
+}
+
+.Access {
+
+    width: 200px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #B8C7CC;
+    margin: 16px;
+
+
+}
+
+.Personal {
+    display: flex;
+    width: 940px;
+    height: 48px;
+
+}
+
+.Name {
+    width: 200px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #262D38;
+    margin: 16px;
+
+
+}
+
+.LoginPersonal {
+    width: 140px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #262D38;
+    margin: 16px;
+
+}
+
+.RolePersonal {
+    width: 140px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #262D38;
+    margin: 16px;
+
+}
+
+.AccessPersonal {
+    width: 324px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #262D38;
+    margin: 16px;
+
+
+}
+
+.LowerTable {
+    display: flex;
+    width: 940px;
+    height: 37px;
+    margin-top: 24px;
+    margin-bottom: 27px;
+
+}
+
+.Select {
+    display: flex;
+    width: 158px;
+    height: 37px;
+}
+
+.SelectText {
+    width: 100px;
+    height: 21px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-right: 16px;
+
+}
+
+.BlockCaretDown {
+    width: 10px;
+    height: 10px;
+    margin-right: 16px;
+    margin-top: 9px;
+    margin-bottom: 8px;
+}
+
+.CaretDownSelect {
+
+}
+
+.ChoosePage {
+    display: flex;
+    align-items: center;
+
+}
+
+.page {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.StripesLeft {
+    width: 24px;
+    height: 24px;
+    margin-left: 167px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #888888;
+    padding: 6px 8px;
+
+}
+
+.One {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33px;
+    height: 35px;
+    color: #FA6400;
+    background: #F6F8F8;
+    box-shadow: 0px 8px 24px rgba(69, 69, 69, 0.06);
+    border-radius: 8px;
+    padding: 9px 13px;
+
+
+}
+
+.Two {
+    width: 35px;
+    height: 35px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #888888;
+    padding: 9px 13px;
+
+}
+
+.Three {
+    width: 36px;
+    height: 35px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #888888;
+    padding: 9px 13px;
+
+}
+
+.Ellipsis {
+    width: 39px;
+    height: 35px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #888888;
+    padding: 9px 13px;
+
+}
+
+.TwentyEight {
+    width: 45px;
+    height: 35px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #888888;
+    padding: 9px 13px;
+
+}
+
+.StripesRight {
+    width: 24px;
+    height: 24px;
+    margin-left: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #888888;
+    padding: 6px 8px;
 }
