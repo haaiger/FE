@@ -3,6 +3,7 @@ import caretdown from "./assets/images/caret-down-fill.png";
 import lock from "./assets/images/lock.png";
 import {ListItem} from "./ListItem";
 
+
 export const ListPage = () => {
     const items = [
         {
@@ -77,6 +78,8 @@ export const ListPage = () => {
         }
     ]
     return (
+
+
         <div className="Right">
 
             <div className="Table">

@@ -434,6 +434,53 @@
 
 }
 
+.LastBlock {
+    display: flex;
+    width: 484px;
+    height: 80px;
+    margin-top: 24px;
+    margin-left: 32px;
+    padding-top: 52px;
+}
+
+.LastChanges {
+    width: 360px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(184, 199, 204, 1);
+    background: rgba(255, 255, 255, 1);
+
+
+}
+
+.Save {
+    width: 108px;
+    height: 40px;
+    color: #FFFFFF;
+    background: linear-gradient(74.6deg, #FF8901 0%, #FF3E3B 100%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 16px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+
 .Flname {
     width: 183px;
     height: 16px;
@@ -622,8 +669,7 @@
     width: 24px;
     height: 24px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .StripesLeft {
@@ -720,4 +766,277 @@
     margin-bottom: 5px;
     color: #888888;
     padding: 6px 8px;
+}
+
+.RightProfile {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(83, 100, 120, 0.15);
+    border-radius: 16px;
+    width: 980px;
+    height: 720px;
+    margin-left: 24px;
+    margin-bottom: 178px;
+
+
+}
+
+.ProfilePhoto {
+    width: 191px;
+    height: 250px;
+    margin-left: 40px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+
+}
+
+.ResetPassword {
+    display: flex;
+    width: 191px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #262D38;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+.DeleteUser {
+    display: flex;
+    width: 191px;
+    height: 40px;
+    color: rgba(255, 62, 59, 1);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 40px;
+
+}
+
+.DescriptionProfile {
+    width: 484px;
+    height: 462px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.ProfileName {
+    width: 157px;
+    height: 42px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 32px;
+    margin-left: 32px;
+
+}
+
+.ProfileBlock {
+    display: flex;
+    width: 371px;
+    height: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 32px;
+    margin-top: 24px;
+
+}
+
+.LoginProfile {
+    width: 58px;
+    height: 21px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(121, 127, 143, 1);
+    align-items: flex-start;
+    margin-left: 14px;
+
+
+}
+
+.LoginProfileText {
+    width: 371px;
+    height: 40px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(38, 45, 56, 1);
+    background: rgba(217, 227, 232, 0.5);
+    border-radius: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+
+}
+
+.RoleProfile {
+    width: 36px;
+    height: 21px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(121, 127, 143, 1);
+    margin-left: 14px;
+
+
+}
+
+.BlockForRole {
+    display: flex;
+    width: 371px;
+    height: 40px;
+    color: rgba(38, 45, 56, 1);
+    background: rgba(217, 227, 232, 0.5);
+    border-radius: 12px;
+}
+
+.RoleProfileText {
+    width: 319px;
+    height: 21px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 9px;
+    padding-left: 16px;
+
+
+}
+
+.CaretDownProfile {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.AccessProfile {
+    display: flex;
+    width: 50px;
+    height: 21px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(121, 127, 143, 1);
+    margin-right: 48px;
+    margin-bottom: 8px;
+    margin-left: 14px;
+
+
+}
+
+.PreLastBlock {
+    width: 267px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.TextDelete {
+    display: flex;
+    width: auto;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(217, 227, 232, 0.5);
+    border-radius: 8px;
+
+}
+
+.AccessProfileText {
+    width: 187px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+
+}
+
+.DeleteAccess {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-right: 16px;
+
+}
+
+.PlusAccess {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.UnlockBlock {
+    width: 140px;
+    height: 21px;
+    display: flex;
+    margin-top: 24px;
+}
+
+.LockProfile {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    margin-left: 32px;
+}
+
+.Unlock {
+    width: 108px;
+    height: 21px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(184, 199, 204, 1);
+
 }

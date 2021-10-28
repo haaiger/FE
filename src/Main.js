@@ -30,7 +30,7 @@ export const Main = () => {
         </div>
         <Switch>
             <Route path="/" exact render={() => <ListPage/>}/>
-            <Route path="/profile/:id" render={() => <Profile/>}/>
+            <Route path="/profile/" render={() => <Profile/>}/>
         </Switch>
         </body>
     )
