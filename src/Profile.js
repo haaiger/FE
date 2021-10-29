@@ -33,7 +33,7 @@ export const Profile = () => {
                     <div className="PreLastBlock">
                         <div className="TextDelete">
                             <div className="AccessProfileText">Просмотр аналитических отчетов</div>
-                            <div>
+                            <div className="DeleteAccessBlock">
                                 <img src={deleteAccess} className="DeleteAccess"/>
                             </div>
                         </div>

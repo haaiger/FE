@@ -17,7 +17,7 @@ export const Header = () => {
     return (
         <header className="HeaderApp">
             <div className="UserAppBlock">
-                <img src={logo}/>
+                <img src={logo} className="Logo"/>
                 <div className="UserApp">UserApp</div>
             </div>
             <div className="Header">
@@ -29,7 +29,7 @@ export const Header = () => {
             </div>
             <div className="Avatar">
                 <img src={profile} className="Photo"/>
-                <div className="User">Artem Shevchenko</div>
+                <div className="User">Alex Petrov</div>
                 <div className="Points">
                     <img src={points} className="Point"/>
                 </div>
