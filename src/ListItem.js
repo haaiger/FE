@@ -3,17 +3,16 @@ import {NavLink} from "react-router-dom";
 
 export const ListItem = ({name, login, role, access}) => {
     return (
-        <div className="Personal">
-            <div className="LockBlock">
-                <img src={unlock} className="Lock"/>
+        <div className="personal">
+            <div className="lock-block">
+                <img src={unlock} className="lock"/>
             </div>
             <NavLink to={"/profile"}>
-                <div className="Name">{name}</div>
+                <div className="name">{name}</div>
             </NavLink>
-            <div className="LoginPersonal">{login}</div>
-            <div className="RolePersonal">{role}</div>
-            <div className="AccessPersonal">{access}</div>
+            <div className="login-personal">{login}</div>
+            <div className="role-personal">{role}</div>
+            <div className="access-personal">{access}</div>
         </div>
     )
-
 }

@@ -5,51 +5,50 @@ import plusAccess from "./assets/images/plus.png";
 import lock from "./assets/images/lock.png";
 
 export const Profile = () => {
-    return (<div className="RightProfile">
-            <div className="LeftRightProfile">
-                <img src={photo1} className="ProfilePhoto"/>
-                <div className="ResetPassword">
+    return (<div className="right-profile">
+            <div className="left-right-profile">
+                <img src={photo1} className="profile-photo"/>
+                <div className="reset-password">
                     Сбросить пароль
                 </div>
-                <div className="DeleteUser">
+                <div className="delete-user">
                     Удалить пользователя
                 </div>
             </div>
-            <div className="DescriptionProfile">
-                <div className="ProfileName">Александров Иван Иванович</div>
-                <div className="ProfileBlock">
-                    <div className="LoginProfile">Логин</div>
-                    <div className="LoginProfileText">bykovas</div>
+            <div className="description-profile">
+                <div className="profile-name">Александров Иван Иванович</div>
+                <div className="profile-block">
+                    <div className="login-profile">Логин</div>
+                    <div className="login-profile-text">bykovas</div>
                 </div>
-                <div className="ProfileBlock">
-                    <div className="RoleProfile">Роль</div>
-                    <div className="BlockForRole">
-                        <div className="RoleProfileText">Аналитик</div>
-                        <img src={caretdown} className="CaretDownProfile"/>
+                <div className="profile-block">
+                    <div className="role-profile">Роль</div>
+                    <div className="block-for-role">
+                        <div className="role-profile-text">Аналитик</div>
+                        <img src={caretdown} className="caret-down-profile"/>
                     </div>
                 </div>
-                <div className="ProfileBlock">
-                    <div className="AccessProfile">Доступ</div>
-                    <div className="PreLastBlock">
-                        <div className="TextDelete">
-                            <div className="AccessProfileText">Просмотр аналитических отчетов</div>
-                            <div className="DeleteAccessBlock">
-                                <img src={deleteAccess} className="DeleteAccess"/>
+                <div className="profile-block">
+                    <div className="access-profile">Доступ</div>
+                    <div className="prelast-block">
+                        <div className="text-delete">
+                            <div className="access-profile-text">Просмотр аналитических отчетов</div>
+                            <div className="delete-access-block">
+                                <img src={deleteAccess} className="delete-access"/>
                             </div>
                         </div>
                         <div>
-
-                            <img src={plusAccess} className="PlusAccess"/>
+                            <img src={plusAccess} className="plus-access"/>
                         </div>
                     </div>
                 </div>
-                <div className="UnlockBlock">
-                    <img src={lock} className="LockProfile"/>
-                    <div className="Unlock">Разблокирован</div>
+                <div className="unlock-block">
+                    <img src={lock} className="lock-profile"/>
+                    <div className="unlock">Разблокирован</div>
                 </div>
-                <div className="LastBlock">
-                    <div className="LastChanges">Последние изменения 29.12.2020</div>
-                    <div className="Save">Сохранить</div>
+                <div className="last-block">
+                    <div className="last-changes">Последние изменения 29.12.2020</div>
+                    <div className="save">Сохранить</div>
                 </div>
             </div>
         </div>

@@ -15,23 +15,23 @@ export const Header = () => {
         setShowBackArrow(location.pathname.includes("profile"))
     }, [location.pathname])
     return (
-        <header className="HeaderApp">
-            <div className="UserAppBlock">
-                <img src={logo} className="Logo"/>
-                <div className="UserApp">UserApp</div>
+        <header className="header-app">
+            <div className="user-app-block">
+                <img src={logo} className="logo"/>
+                <div className="user-app">UserApp</div>
             </div>
-            <div className="Header">
-                {showBackArrow && <NavLink to={"/"}><img src={arrowLeft} className="ArrowLeft"/></NavLink>}
-                <div className="HeaderText">Управление пользователями</div>
-                <img src={printer} className="Printer"/>
-                <img src={git} className="Git"/>
-                <img src={userplus} className="UserPlus"/>
+            <div className="header">
+                {showBackArrow && <NavLink to={"/"}><img src={arrowLeft} className="arrow-left"/></NavLink>}
+                <div className="header-text">Управление пользователями</div>
+                <img src={printer} className="printer"/>
+                <img src={git} className="git"/>
+                <img src={userplus} className="user-plus"/>
             </div>
-            <div className="Avatar">
-                <img src={profile} className="Photo"/>
-                <div className="User">Alex Petrov</div>
-                <div className="Points">
-                    <img src={points} className="Point"/>
+            <div className="avatar">
+                <img src={profile} className="photo"/>
+                <div className="user">Alex Petrov</div>
+                <div className="points">
+                    <img src={points} className="point"/>
                 </div>
             </div>
         </header>

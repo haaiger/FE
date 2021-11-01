@@ -7,30 +7,30 @@ import {Profile} from "./Profile";
 
 export const Main = () => {
     return (
-        <body className="Body">
-        <div className="Left">
-            <div className="UsersBlock">
+        <body className="body">
+        <div className="left">
+            <div className="users-block">
                 <div>
-                    <img src={users} className="UsersProfile"/>
+                    <img src={users} className="users-profile"/>
                 </div>
-                <div className="Users">Пользователи</div>
+                <div className="users">Пользователи</div>
             </div>
-            <div className="TimeBlock">
+            <div className="time-block">
                 <div>
-                    <img src={watch} className="Watch"/>
+                    <img src={watch} className="watch"/>
                 </div>
-                <div className="Time">Учёт времени</div>
+                <div className="time">Учёт времени</div>
             </div>
-            <div className="SettingsBlock">
+            <div className="settings-block">
                 <div>
-                    <img src={sliders} className="Sliders"/>
+                    <img src={sliders} className="sliders"/>
                 </div>
-                <div className="Settings">Настройки</div>
+                <div className="settings">Настройки</div>
             </div>
         </div>
         <Switch>
-            <Route path="/" exact render={() => <ListPage/>}/>
-            <Route path="/profile/" render={() => <Profile/>}/>
+            <Route exact path='/' component={ListPage}/>
+            <Route path='/profile' component={Profile}/>
         </Switch>
         </body>
     )

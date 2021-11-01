@@ -1,15 +1,13 @@
-import './App.css';
+import './scss/App.scss';
 import {Header} from "./Header";
 import {Main} from "./Main";
 
 function App() {
     return (
-
-        <div className="App">
-            <div className="Center">
+        <div className="app">
+            <div className="center">
                 <Header/>
                 <Main/>
-
             </div>
         </div>
     )
