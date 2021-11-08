@@ -4,8 +4,12 @@ import sliders from "./assets/images/sliders.png";
 import {Route, Switch} from "react-router-dom";
 import {ListPage} from "./ListPage";
 import {Profile} from "./Profile";
+import {useState} from "react";
 
 export const Main = () => {
+    const [selectedUser,setSelectedUser] = useState(null)
+    const onUserClick = (user) => setSelectedUser(user)
+    console.log(selectedUser);
     return (
         <body className="body">
         <div className="left">
@@ -29,8 +33,8 @@ export const Main = () => {
             </div>
         </div>
         <Switch>
-            <Route exact path='/' component={ListPage}/>
-            <Route path='/profile' component={Profile}/>
+            <Route exact path='/' render={() => <ListPage onUserClick={onUserClick}/>}/>
+            <Route path='/profile' render={() => <Profile selectedUser={selectedUser}/>}/>
         </Switch>
         </body>
     )
