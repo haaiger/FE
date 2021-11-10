@@ -13,7 +13,7 @@ export const ListItem = ({user, onUserClick}) => {
             </NavLink>
             <div className="login-personal">{login}</div>
             <div className="role-personal">{role}</div>
-            <div className="access-personal">{access}</div>
+            <div className="access-personal">{access}'</div>'
         </div>
     )
 }

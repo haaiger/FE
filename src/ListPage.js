@@ -5,7 +5,8 @@ import {ListItem} from "./ListItem";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
-import {setUsers} from "./redux/usersReducer";
+import {setUsers} from "./redux/actions/actionCreators";
+
 
 
 export const ListPage = ({onUserClick}) => {

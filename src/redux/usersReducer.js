@@ -1,4 +1,5 @@
-const SET_USERS = 'SET_USERS'
+import {SET_USERS} from "./actions/action";
+
 export const initialState = {
     users: [],
 }
@@ -14,5 +15,4 @@ const usersReducer = (state = initialState, action) => {
     }
 }
 
-export const setUsers = (users) => ({type: SET_USERS, data: users})
 export default usersReducer
