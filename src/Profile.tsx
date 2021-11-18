@@ -4,8 +4,14 @@ import deleteAccess from "./assets/images/delete.png";
 import plusAccess from "./assets/images/plus.png";
 import lock from "./assets/images/lock.png";
 
-export const Profile = () => {
-    return (<div className="right-profile">
+export const Profile = ({selectedUser}) => {
+
+
+    if(!selectedUser) return null
+    const {first_name: name, last_name: role, id: login, email: access} = selectedUser
+
+    return (
+        <div className="right-profile">
             <div className="left-right-profile">
                 <img src={photo1} className="profile-photo"/>
                 <div className="reset-password">
@@ -16,15 +22,15 @@ export const Profile = () => {
                 </div>
             </div>
             <div className="description-profile">
-                <div className="profile-name">Александров Иван Иванович</div>
+                <div className="profile-name">{`${name} ${role}`}</div>
                 <div className="profile-block">
                     <div className="login-profile">Логин</div>
-                    <div className="login-profile-text">bykovas</div>
+                    <div className="login-profile-text">{login}</div>
                 </div>
                 <div className="profile-block">
                     <div className="role-profile">Роль</div>
                     <div className="block-for-role">
-                        <div className="role-profile-text">Аналитик</div>
+                        <div className="role-profile-text">{role}</div>
                         <img src={caretdown} className="caret-down-profile"/>
                     </div>
                 </div>
@@ -32,7 +38,7 @@ export const Profile = () => {
                     <div className="access-profile">Доступ</div>
                     <div className="prelast-block">
                         <div className="text-delete">
-                            <div className="access-profile-text">Просмотр аналитических отчетов</div>
+                            <div className="access-profile-text">{access}</div>
                             <div className="delete-access-block">
                                 <img src={deleteAccess} className="delete-access"/>
                             </div>
