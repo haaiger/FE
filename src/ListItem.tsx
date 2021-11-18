@@ -1,7 +1,13 @@
 import unlock from "./assets/images/unlock.png";
 import {NavLink} from "react-router-dom";
+import { UserType } from "./redux/usersReducer";
+import { FC } from "react";
 
-export const ListItem = ({user, onUserClick}) => {
+interface ListItemI{
+    user:UserType,
+    onUserClick: (user:UserType) => void
+}
+export const ListItem:FC<ListItemI> = ({user, onUserClick}) => {
     const {first_name: name, last_name: role, id: login, email: access} = user
     return (
         <div className="personal">

@@ -2,15 +2,19 @@ import search from "./assets/images/search.png";
 import caretdown from "./assets/images/caret-down-fill.png";
 import lock from "./assets/images/lock.png";
 import {ListItem} from "./ListItem";
-import {useEffect, useState} from "react";
+import {FC, useEffect, useState} from "react";
 import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
-import {setUsers} from "./redux/actions/actionCreators";
+import {actions} from "./redux/actions/actionCreators";
+import { AppStateType } from "./redux/store";
+import { UserType } from "./redux/usersReducer";
 
+interface ListPAgeI {
+    onUserClick: (user:UserType) => void
+}
 
-
-export const ListPage = ({onUserClick}) => {
-    const users = useSelector(state => state.users.users)
+export const ListPage:FC<ListPAgeI> = ({onUserClick}) => {
+    const users = useSelector((state:AppStateType) => state.users.users)
     const dispatch = useDispatch()
     const [page, setPage] = useState(1)
     useEffect(() => {
@@ -18,7 +22,7 @@ export const ListPage = ({onUserClick}) => {
             return await axios.get(`https://reqres.in/api/users?page=${page}&per_page=10`)
         }
         fetchUser(page).then(res => {
-            dispatch(setUsers(res.data.data))
+            dispatch(actions.setUsers(res.data.data))
         })
     }, [page])
     if (users.length === 0) return null
