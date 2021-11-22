@@ -1,14 +1,16 @@
+import {Route, Switch} from "react-router-dom";
+import {useState} from "react";
+import {ListPage} from "./list-page";
+import {Profile} from "./Profile";
 import users from "./assets/images/users.png";
 import watch from "./assets/images/watch.png";
 import sliders from "./assets/images/sliders.png";
-import {Route, Switch} from "react-router-dom";
-import {ListPage} from "./ListPage";
-import {Profile} from "./Profile";
-import {useState} from "react";
+import { TUser } from "./redux/usersReducer";
+
 
 export const Main = () => {
-    const [selectedUser,setSelectedUser] = useState(null)
-    const onUserClick = (user) => setSelectedUser(user)
+    const [selectedUser,setSelectedUser] = useState<TUser | null>(null)
+    const onUserClick = (user:TUser) => setSelectedUser(user)
     console.log(selectedUser);
     return (
         <body className="body">

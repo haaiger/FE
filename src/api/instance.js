@@ -4,7 +4,6 @@ const instance = axios.create({
     withCredentials:true,
     headers:{
         accept:'application/json'
-
     }
 })
 export default instance

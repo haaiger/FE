@@ -1,20 +1,21 @@
+import {ListItem} from "./list-item";
+import {FC, useEffect, useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {actions} from "./redux/actions/actionCreators";
+import {TAppState} from "./redux/store";
+import {TUser} from "./redux/usersReducer";
+import axios from "axios";
 import search from "./assets/images/search.png";
 import caretdown from "./assets/images/caret-down-fill.png";
 import lock from "./assets/images/lock.png";
-import {ListItem} from "./ListItem";
-import {FC, useEffect, useState} from "react";
-import axios from "axios";
-import {useDispatch, useSelector} from "react-redux";
-import {actions} from "./redux/actions/actionCreators";
-import { AppStateType } from "./redux/store";
-import { UserType } from "./redux/usersReducer";
 
-interface ListPAgeI {
-    onUserClick: (user:UserType) => void
+interface IListPAge {
+    onUserClick: (user:TUser) => void
 }
 
-export const ListPage:FC<ListPAgeI> = ({onUserClick}) => {
-    const users = useSelector((state:AppStateType) => state.users.users)
+export const ListPage:FC<IListPAge> = ({onUserClick}) => {
+    //@ts-ignore
+    const users = useSelector((state:TAppState) => state.users.users)
     const dispatch = useDispatch()
     const [page, setPage] = useState(1)
     useEffect(() => {
@@ -25,7 +26,10 @@ export const ListPage:FC<ListPAgeI> = ({onUserClick}) => {
             dispatch(actions.setUsers(res.data.data))
         })
     }, [page])
-    if (users.length === 0) return null
+    if (users.length === 0) 
+    {
+        return null;
+    }
     return (
         <div className="right">
             <div className="table">
@@ -59,7 +63,7 @@ export const ListPage:FC<ListPAgeI> = ({onUserClick}) => {
                     <div className="role">Роль</div>
                     <div className="access">Доступ</div>
                 </div>
-                {users.map(user => <ListItem onUserClick={onUserClick} user={user}/>)}
+                {users.map((user: TUser) => <ListItem onUserClick={onUserClick} user={user}/>)}
             </div>
             <div className="lower-table">
                 <div className="select">

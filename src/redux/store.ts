@@ -6,12 +6,11 @@ const rootReducer = combineReducers({
 })
 export const store = createStore(rootReducer)
 
+type TRootReducer = typeof rootReducer
+export type TAppState = ReturnType<TRootReducer>
 
-type RootReducerType = typeof rootReducer
-export type AppStateType = ReturnType<RootReducerType>
-
-type PropertiesType<T> = T extends { [key: string]: infer U } ? U : never
-export type InferActionsType<
+type TProperties<T> = T extends { [key: string]: infer U } ? U : never
+export type TInferActions<
   T extends { [key: string]: (...args: any[]) => any }
-> = ReturnType<PropertiesType<T>>
+> = ReturnType<TProperties<T>>
 

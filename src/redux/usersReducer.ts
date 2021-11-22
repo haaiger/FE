@@ -1,7 +1,7 @@
 import {SET_USERS,} from "./actions/action";
-import {ActionsType} from './actions/actionCreators'
-import {InferActionsType} from './store'
-export type UserType = {
+import {TActions} from './actions/actionCreators'
+import {TInferActions} from './store'
+export type TUser = {
         id:number
         avatar:string
         email:string
@@ -9,15 +9,14 @@ export type UserType = {
         last_name:string
  }
 
-interface initialStateI{
-    users: UserType[]
+interface IinitialState{
+    users: TUser[]
 }
 
-
-export const initialState:initialStateI = {
+export const initialState:IinitialState = {
     users: [],
 }
-const usersReducer = (state = initialState, action:ActionsType) => {
+const usersReducer = (state = initialState, action:TActions) => {
     switch (action.type) {
         case SET_USERS:
             return {
@@ -28,7 +27,5 @@ const usersReducer = (state = initialState, action:ActionsType) => {
             return state
     }
 }
-
-
 
 export default usersReducer

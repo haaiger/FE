@@ -3,13 +3,24 @@ import caretdown from "./assets/images/caret-down-fill.png";
 import deleteAccess from "./assets/images/delete.png";
 import plusAccess from "./assets/images/plus.png";
 import lock from "./assets/images/lock.png";
+import { TUser } from "./redux/usersReducer";
+import { FC } from "react";
 
-export const Profile = ({selectedUser}) => {
+interface Profile {
+    selectedUser: TUser | null;
+}
 
+export const Profile: FC<Profile> = ({selectedUser}) => {
 
-    if(!selectedUser) return null
-    const {first_name: name, last_name: role, id: login, email: access} = selectedUser
-
+    if(!selectedUser) {
+    return null
+    }
+    const {
+        first_name: name, 
+        last_name: role, 
+        id: login, 
+        email: access
+    } = selectedUser
     return (
         <div className="right-profile">
             <div className="left-right-profile">
