@@ -1,10 +1,13 @@
 import {SET_USERS} from "./action";
-import {InferActionsType} from '../store'
-import { UserType } from "../usersReducer";
-export type ActionsType = InferActionsType<typeof actions>
+import {TInferActions} from '../store'
+import { TUser } from "../usersReducer";
+export type TActions = TInferActions<typeof actions>
 
 export const actions = {
-    setUsers:(users:UserType[]) => ({type: SET_USERS, data: users})
+    setUsers:(users:TUser) => ({
+        type: SET_USERS, 
+        data: users,
+    })
 }
 
 

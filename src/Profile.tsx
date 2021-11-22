@@ -1,15 +1,28 @@
+import {FunctionComponent} from "react";
+import {TUser} from "./redux/usersReducer";
+import {ListItem} from "./list-item";
 import photo1 from "./assets/images/image 1.png";
 import caretdown from "./assets/images/caret-down-fill.png";
 import deleteAccess from "./assets/images/delete.png";
 import plusAccess from "./assets/images/plus.png";
 import lock from "./assets/images/lock.png";
 
-export const Profile = ({selectedUser}) => {
+interface Profile {
+    selectedUser: (TUser)
 
+}
 
-    if(!selectedUser) return null
-    const {first_name: name, last_name: role, id: login, email: access} = selectedUser
+export const Profile : FunctionComponent<Profile> = ({selectedUser}) => {
 
+    if(!selectedUser) {
+        return null;
+    }
+    const {
+        first_name: name, 
+        last_name: role, 
+        id: login, 
+        email: access
+    } = selectedUser
     return (
         <div className="right-profile">
             <div className="left-right-profile">

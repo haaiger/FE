@@ -1,14 +1,23 @@
-import unlock from "./assets/images/unlock.png";
 import {NavLink} from "react-router-dom";
-import { TUser} from "./redux/usersReducer";
-import { FC } from "react";
+import {TUser} from "./redux/usersReducer";
+import {FC} from "react";
+import unlock from "./assets/images/unlock.png";
 
 interface IListItem{
     user:TUser,
-    onUserClick: (user:TUser) => void
+    onUserClick: Function,
 }
-export const ListItem:FC<IListItem> = ({user, onUserClick}) => {
-    const {first_name: name, last_name: role, id: login, email: access} = user
+
+export const ListItem:FC<IListItem> = ({
+    user, 
+    onUserClick,
+}: IListItem) => {
+    const {
+        first_name: name, 
+        last_name: role, 
+        id: login, 
+        email: access
+    } = user
     return (
         <div className="personal">
             <div className="lock-block">
