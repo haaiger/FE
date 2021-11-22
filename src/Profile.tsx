@@ -1,21 +1,19 @@
-import {FunctionComponent} from "react";
-import {TUser} from "./redux/usersReducer";
-import {ListItem} from "./list-item";
 import photo1 from "./assets/images/image 1.png";
 import caretdown from "./assets/images/caret-down-fill.png";
 import deleteAccess from "./assets/images/delete.png";
 import plusAccess from "./assets/images/plus.png";
 import lock from "./assets/images/lock.png";
+import { TUser } from "./redux/usersReducer";
+import { FC } from "react";
 
 interface Profile {
-    selectedUser: (TUser)
-
+    selectedUser: TUser | null;
 }
 
-export const Profile : FunctionComponent<Profile> = ({selectedUser}) => {
+export const Profile: FC<Profile> = ({selectedUser}) => {
 
     if(!selectedUser) {
-        return null;
+    return null
     }
     const {
         first_name: name, 
